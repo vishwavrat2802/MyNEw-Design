@@ -57,22 +57,22 @@
    
 }
 #imagecontain2 {
-    background-color: blanchedalmond;
-}
-#imagecontain2 .container {
     display: flex;
+    background-color: blanchedalmond;
+    overflow: hidden;
 }
-
 #image{
     display: flex;
     width: 50%;
-    height: 80vh;
+    height: auto;
     float: left;
-    margin-left: 6%;
+    position: relative;
   
 }
 #image>img {
-    width: 80%;
+    position: absolute;
+    right: 10px;
+    width: auto;
     height: auto;
     border-radius: 10px;
 }
@@ -162,16 +162,17 @@
 }
 
 @media (min-width:501px) and (max-width:767px ){
+   
     #image{
         display: flex;
         width: 100%;
-        height: auto;
+        height: 80vh;
         float: left;
-        
+        position: relative;
+      
     }
-
-    #image img {
-        margin-left: 9%;
+    #image>img {
+        margin: auto;
     }
     #imagecontent {
         width: 90%;
